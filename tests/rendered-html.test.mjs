@@ -37,6 +37,9 @@ test("server-renders the advisory homepage", async () => {
   assert.match(html, /Third-party administrator \(TPA\)/);
   assert.match(html, /brian-client-meeting\.png/);
   assert.match(html, /Read more \(3 min read\)/);
+  assert.match(html, /Personal Wealth Management/);
+  assert.match(html, /bjhndrsn@gwu\.edu/);
+  assert.match(html, /linkedin\.com\/in\/brian-henderson-63647950/);
 });
 
 const articles = [
