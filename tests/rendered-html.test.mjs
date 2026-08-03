@@ -43,6 +43,7 @@ test("server-renders the advisory homepage", async () => {
   assert.match(html, /Distinguished Professor of Finance/);
   assert.match(html, /Market Expert/);
   assert.match(html, /Investment strategy &amp; market analysis/);
+  assert.match(html, /I help small and midsized employers immediately improve retirement-plan value/);
 });
 
 const articles = [
