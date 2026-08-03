@@ -40,7 +40,7 @@ const roles = [
   },
   {
     icon: Database,
-    title: "401(k)/403(b) recordkeeper",
+    title: "401(k)/403(b) Recordkeeper",
     owner: "Plan operations",
     body: "Maintains participant accounts, processes contributions and distributions, and provides the employee-facing platform and statements.",
   },
@@ -268,7 +268,7 @@ export default function Home() {
           <div className="eyebrow"><span /> What makes Brian different</div>
           <h2>He spent his career teaching finance - and fighting the damage high fees and poor performance can cause.</h2>
           <p className="difference-lead">
-            Brian brings together three perspectives that rarely sit in one room: finance professor, investment professional, and expert witness in complex financial matters.
+            Brian brings together multiple perspectives that rarely sit in one room: finance professor, investment professional, and expert witness in complex financial matters.
           </p>
         </div>
         <div className="difference-points">

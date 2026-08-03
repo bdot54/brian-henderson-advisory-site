@@ -1,6 +1,15 @@
 import Link from "next/link";
 
-export function Footer() {
+type FooterProps = {
+  context?: "plan" | "wealth";
+};
+
+const footerSummary = {
+  plan: "I help plan sponsors uncover hidden costs and overlooked risks - without spending hours chasing providers or analyzing reports, backed by objective benchmarking and hands-on support from an expert.",
+  wealth: "I help individuals and families build a clear path to retirement - without sorting through investments, taxes, and major financial decisions alone, backed by decades of financial expertise and hands-on, one-on-one support.",
+};
+
+export function Footer({ context = "plan" }: FooterProps) {
   return (
     <footer className="site-footer">
       <div className="shell footer-top">
@@ -12,7 +21,7 @@ export function Footer() {
               <small>PhD, CFA · Financial Planner</small>
             </span>
           </Link>
-          <p>I help plan sponsors uncover hidden costs and overlooked risks - without spending hours chasing providers or analyzing reports, backed by objective benchmarking and hands-on support from an expert.</p>
+          <p>{footerSummary[context]}</p>
         </div>
         <div className="footer-links">
           <div><small>Explore</small><Link href="/#review">401(k) Advisory</Link><Link href="/wealth">Personal Wealth Management</Link><Link href="/#why-brian">About Brian</Link></div>

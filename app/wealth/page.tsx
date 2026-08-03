@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Footer } from "../components/Footer";
 import { SiteNav } from "../components/SiteNav";
 import { WealthMoments } from "../components/WealthMoments";
@@ -58,10 +57,8 @@ export default function WealthPage() {
       <section className="wealth-services shell">
         <div className="section-heading"><div><div className="eyebrow"><span /> The work</div><h2>Planning and investment management, connected.</h2></div></div>
         <div className="service-columns">
-          <div className="service-cycle service-cycle-top" aria-hidden="true"><ArrowRight /></div>
           <article><span>Financial planning</span><ul><li>Retirement income decisions</li><li>Cash-flow and savings strategy</li><li>Risk and insurance coordination</li><li>Tax-aware planning with your tax professional</li><li>Estate-planning coordination with counsel</li></ul></article>
           <article><span>Investment management</span><ul><li>Portfolio design and asset allocation</li><li>Investment selection and monitoring</li><li>Risk, liquidity, and concentration review</li><li>Cost and complexity analysis</li><li>Disciplined rebalancing and ongoing oversight</li></ul></article>
-          <div className="service-cycle service-cycle-bottom" aria-hidden="true"><ArrowLeft /></div>
         </div>
       </section>
 
@@ -71,7 +68,7 @@ export default function WealthPage() {
           <div><p>A focused conversation can reveal whether your current plan supports the future you want - and where a better path may exist.</p><a className="button button-light" href="mailto:bjhndrsn@gmail.com?subject=Personal%20wealth%20conversation%20with%20Brian">Request a 30-minute conversation <span>↗</span></a></div>
         </div>
       </section>
-      <Footer />
+      <Footer context="wealth" />
     </main>
   );
 }

@@ -36,6 +36,7 @@ test("server-renders the advisory homepage", async () => {
   assert.match(html, /Strengthen compliance and audit readiness/);
   assert.match(html, /A great advisor is:/);
   assert.match(html, /Third-party administrator \(TPA\)/);
+  assert.match(html, /401\(k\)\/403\(b\) Recordkeeper/);
   assert.match(html, /brian-client-meeting\.png/);
   assert.match(html, /Read more \(3 min read\)/);
   assert.match(html, /Personal Wealth Management/);
@@ -53,6 +54,7 @@ test("server-renders the advisory homepage", async () => {
   assert.match(html, /You leave knowing\.\.\./);
   assert.match(html, /Get a custom presentation outlining/);
   assert.match(html, /Schedule your free review/);
+  assert.match(html, /multiple perspectives that rarely sit in one room/);
   assert.doesNotMatch(html, /Claim your free review/);
   assert.doesNotMatch(html, /BH \/ 01/);
   assert.doesNotMatch(html, /—/);
@@ -71,6 +73,9 @@ test("server-renders the personal wealth page", async () => {
   assert.match(html, /How Brian creates clarity/);
   assert.match(html, /brian-henderson-mark-reversed\.png/);
   assert.match(html, /Start with your goals/);
+  assert.match(html, /I help individuals and families build a clear path to retirement/);
+  assert.match(html, /hands-on, one-on-one support/);
+  assert.doesNotMatch(html, /I help plan sponsors uncover hidden costs/);
   assert.doesNotMatch(html, /Looking for 401\(k\) plan advisory/);
 });
 
