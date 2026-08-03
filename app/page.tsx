@@ -109,10 +109,10 @@ const insightCards = [
   },
   {
     icon: Spline,
-    label: "Discipline",
-    title: "When complexity stops helping",
+    label: "Service",
+    title: "What kind of service should I expect?",
     href: "/insights/when-complexity-stops-helping",
-    body: "More products, more jargon, and more moving parts do not automatically mean better advice. Discipline and transparency often serve plans better.",
+    body: "A 401(k) advisor should do more than review investments. Here is what responsive, proactive, year-round support should look like.",
   },
 ];
 
@@ -123,7 +123,7 @@ export default function Home() {
 
       <section className="hero shell" id="top">
         <div className="hero-copy">
-          <div className="eyebrow"><span /> 401(k) advisory for plan sponsors</div>
+          <div className="eyebrow"><span /> 401(k)/403(b) Advisory for Plan Sponsors</div>
           <h1>A clearer view of your <em>401(k).</em></h1>
           <p className="hero-lead">
             Find out whether your plan’s fees, investments, design, and oversight are doing what they should—for your company and your people.
@@ -316,8 +316,8 @@ export default function Home() {
 
       <section className="final-cta" id="final-review">
         <div className="shell final-cta-inner">
-          <div><div className="eyebrow eyebrow-light"><span /> Start with a second opinion</div><h2>Your plan may be fine.<br /><em>Let’s know.</em></h2></div>
-          <div><p>In 30 minutes, get a sharper view of the questions your plan should be able to answer.</p><Link className="button button-light" href="/book">Book the free fee & fiduciary review <span>↗</span></Link></div>
+          <div><div className="eyebrow eyebrow-light"><span /> Start with a second opinion</div><h2>Your plan <em>may</em> be fine.<br /><em>Let’s know.</em></h2></div>
+          <div><p>In 30 minutes, get a sharper view of the questions your plan should be able to answer.</p><Link className="button button-light" href="/book">Schedule the free fee & fiduciary review <span>↗</span></Link></div>
         </div>
       </section>
 

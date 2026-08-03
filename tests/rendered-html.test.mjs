@@ -30,6 +30,7 @@ test("server-renders the advisory homepage", async () => {
   const html = await response.text();
   assert.match(html, /<title>Brian Henderson, PhD, CFA \| 401\(k\) Financial Advisor<\/title>/i);
   assert.match(html, /Schedule the free review/);
+  assert.match(html, /401\(k\)\/403\(b\) Advisory for Plan Sponsors/);
   assert.match(html, /Increase owner contribution potential/);
   assert.match(html, /Give leadership time back/);
   assert.match(html, /Strengthen compliance and audit readiness/);
@@ -38,6 +39,8 @@ test("server-renders the advisory homepage", async () => {
   assert.match(html, /brian-client-meeting\.png/);
   assert.match(html, /Read more \(3 min read\)/);
   assert.match(html, /Personal Wealth Management/);
+  assert.match(html, /brian-henderson-mark-navy\.png/);
+  assert.match(html, /PhD, CFA · Retirement Plan Advisory/);
   assert.match(html, /bjhndrsn@gmail\.com/);
   assert.match(html, /linkedin\.com\/in\/brian-henderson-63647950/);
   assert.match(html, /Distinguished Professor of Finance/);
@@ -51,9 +54,13 @@ test("server-renders the personal wealth page", async () => {
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /A clearer path to the future you’ve worked for/);
-  assert.match(html, /You worry you may not have enough/);
+  assert.match(html, /I’ve saved for years, but I still worry I may not have enough/);
   assert.match(html, /not leaving anything on the table/);
-  assert.match(html, /Stay confidently on track/);
+  assert.match(html, /Invest intelligently/);
+  assert.match(html, /decades of financial expertise and involved, one-on-one service/);
+  assert.match(html, /passionate, well-known financial expert/);
+  assert.match(html, /How Brian creates clarity/);
+  assert.match(html, /brian-henderson-mark-reversed\.png/);
   assert.match(html, /Start with your goals/);
   assert.doesNotMatch(html, /Looking for 401\(k\) plan advisory/);
 });
@@ -61,7 +68,7 @@ test("server-renders the personal wealth page", async () => {
 const articles = [
   ["/insights/fees", "Why fees deserve more attention"],
   ["/insights/plan-sponsor-review", "What plan sponsors should review"],
-  ["/insights/when-complexity-stops-helping", "When complexity stops helping"],
+  ["/insights/when-complexity-stops-helping", "What kind of service should I expect from my 401(k) plan financial advisor?"],
 ];
 
 for (const [pathname, title] of articles) {
@@ -69,7 +76,7 @@ for (const [pathname, title] of articles) {
     const response = await render(pathname);
     assert.equal(response.status, 200);
     const html = await response.text();
-    assert.match(html, new RegExp(title));
+    assert.ok(html.includes(title));
     assert.match(html, /3 min read/);
     assert.match(html, /The practical takeaway/);
   });
