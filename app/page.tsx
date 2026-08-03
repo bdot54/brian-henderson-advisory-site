@@ -132,7 +132,6 @@ export default function Home() {
             <Link className="button button-primary" href="/book">Book your free 30-minute review <span>↗</span></Link>
             <Link className="text-link" href="#why-brian">Why Brian is different <span>↓</span></Link>
           </div>
-          <p className="microcopy">I help plan sponsors uncover hidden costs and overlooked risks - without spending hours chasing providers or analyzing reports, backed by objective benchmarking and hands-on support from an expert.</p>
         </div>
 
         <div className="hero-visual">
