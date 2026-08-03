@@ -44,7 +44,7 @@ img { display: block; max-width: 100%; }
 .hero h1, .subhero h1 { max-width: 760px; margin: 25px 0 26px; font-family: Georgia, serif; font-size: clamp(62px, 7.1vw, 114px); font-weight: 400; line-height: .93; letter-spacing: -.065em; }
 h1 em, h2 em { color: var(--blue); font-weight: 400; }
 .hero-lead { max-width: 660px; margin: 0; color: #425467; font-size: clamp(19px, 2vw, 25px); line-height: 1.45; }
-.hero-actions { display: flex; align-items: center; gap: 30px; margin-top: 38px; }
+.hero-actions { display: flex; align-items: center; gap: 30px; margin-top: 34px; }
 .button { display: inline-flex; align-items: center; justify-content: space-between; gap: 28px; min-height: 56px; padding: 15px 20px; border: 0; cursor: pointer; font-size: 13px; font-weight: 800; transition: transform .2s ease, background .2s ease; }
 .button:hover { transform: translateY(-2px); }
 .button-primary { background: var(--blue); color: white; }
@@ -55,7 +55,6 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
 .text-link { display: inline-flex; align-items: center; gap: 14px; padding: 10px 0 7px; border-bottom: 1px solid var(--ink); font-size: 13px; font-weight: 750; }
 .text-link span { color: var(--blue); }
 .text-link.large { font-size: 15px; }
-.microcopy { max-width: 690px; margin: 23px 0 0; padding: 16px 19px; border-left: 4px solid var(--blue); background: rgba(183,231,194,.25); color: var(--navy); font-size: 15px; font-style: italic; font-weight: 650; line-height: 1.55; }
 .hero-visual { position: relative; min-height: 640px; padding: 0 0 35px 34px; }
 .portrait-accent { position: absolute; left: 0; top: 9%; bottom: 17%; width: 8px; background: var(--blue); }
 .portrait-frame { position: relative; width: 86%; height: 560px; margin-left: auto; background: #d5d2cb; overflow: hidden; box-shadow: 0 26px 60px rgba(7,24,44,.15); }
@@ -226,6 +225,8 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
 
 .site-footer { background: var(--navy); color: white; }
 .footer-top { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; padding-top: 80px; padding-bottom: 80px; border-bottom: 1px solid rgba(255,255,255,.14); }
+.footer-brand-block { display: flex; max-width: 485px; flex-direction: column; align-items: flex-start; }
+.footer-brand-block > p { margin: 26px 0 0 68px; padding-left: 17px; border-left: 3px solid var(--mint); color: #aebbc8; font-size: 14px; font-style: italic; font-weight: 550; line-height: 1.65; }
 .footer-links { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
 .footer-links > div { display: flex; flex-direction: column; gap: 10px; }
 .footer-links small { margin-bottom: 9px; color: var(--mint); font-size: 9px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
@@ -404,6 +405,7 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
   .final-cta-inner, .footer-top, .subhero, .wealth-portrait-grid, .wealth-approach-grid, .book-page { grid-template-columns: 1fr; gap: 55px; }
   .final-cta { padding: 90px 0; }
   .footer-links, .service-columns { grid-template-columns: 1fr; }
+  .footer-brand-block > p { margin-left: 0; }
   .service-columns article + article { border-left: 0; border-top: 1px solid var(--line); }
   .service-cycle { display: none; }
   .wealth-moments-selector { grid-template-columns: 1fr; }
