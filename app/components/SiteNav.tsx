@@ -11,7 +11,7 @@ export function SiteNav() {
         <nav aria-label="Main navigation">
           <Link href="/#review">401(k) advisory</Link>
           <Link href="/#why-brian">Why Brian</Link>
-          <Link href="/wealth">Personal wealth</Link>
+          <Link href="/wealth">Personal Wealth Management</Link>
         </nav>
         <Link className="nav-cta" href="/book">Free 30-minute review <span>↗</span></Link>
       </div>
