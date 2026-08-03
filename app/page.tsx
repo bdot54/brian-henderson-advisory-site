@@ -25,7 +25,7 @@ import { Footer } from "./components/Footer";
 import { SiteNav } from "./components/SiteNav";
 
 const reviewItems = [
-  ["Fees", "How your all-in plan costs compare—and where avoidable cost may be hiding."],
+  ["Fees", "How your all-in plan costs compare - and where avoidable cost may be hiding."],
   ["Investments", "Whether the lineup is disciplined, diversified, and working for participants."],
   ["Fiduciary process", "Where oversight, documentation, or decision-making deserves a closer look."],
   ["Plan design", "Whether plan features are helping employees participate and use the benefit well."],
@@ -88,7 +88,7 @@ const stakes = [
 const processSteps = [
   { icon: MessageCircle, title: "Talk", body: "Share what you know, what feels off, and what you want the plan to do better." },
   { icon: FileSearch, title: "Review", body: "Brian identifies the documents and data needed to examine fees, investments, service, and design." },
-  { icon: ScanSearch, title: "Compare", body: "See how the plan stacks up and where the evidence points to a meaningful opportunity." },
+  { icon: ScanSearch, title: "Compare", body: "Get a custom presentation outlining how the plan compares, what the evidence shows, and where meaningful opportunities may exist." },
   { icon: CheckCircle2, title: "Decide", body: "Keep what works, improve what does not, and choose the next step without pressure." },
 ];
 
@@ -126,13 +126,13 @@ export default function Home() {
           <div className="eyebrow"><span /> 401(k)/403(b) Advisory for Plan Sponsors</div>
           <h1>A clearer view of your <em>401(k).</em></h1>
           <p className="hero-lead">
-            Find out whether your plan’s fees, investments, design, and oversight are doing what they should—for your company and your people.
+            Find out whether your plan’s fees, investments, design, and oversight are doing what they should - for your company and your people.
           </p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/book">Book your free 30-minute review <span>↗</span></Link>
             <Link className="text-link" href="#why-brian">Why Brian is different <span>↓</span></Link>
           </div>
-          <p className="microcopy">I help small and midsized employers improve retirement-plan value without another time-consuming internal project, backed by independent analysis and expert oversight.</p>
+          <p className="microcopy">I help plan sponsors uncover hidden costs and overlooked risks - without spending hours chasing providers or analyzing reports, backed by objective benchmarking and hands-on support from an expert.</p>
         </div>
 
         <div className="hero-visual">
@@ -196,7 +196,7 @@ export default function Home() {
         <div className="review-intro">
           <div className="offer-mark">30</div>
           <div>
-            <div className="eyebrow"><span /> A low-risk first step</div>
+            <div className="eyebrow"><span /> A no-risk first step</div>
             <h2>Thirty useful minutes.<br />A much clearer next step.</h2>
           </div>
           <p>
@@ -214,8 +214,12 @@ export default function Home() {
         </div>
         <div className="review-outcome">
           <div className="outcome-copy">
-            <div className="outcome-kicker">You leave knowing</div>
-            <p>what looks sound, what deserves deeper analysis, and whether Brian is the right person to help.</p>
+            <div className="outcome-kicker">You leave knowing...</div>
+            <ul className="outcome-list">
+              <li><CheckCircle2 aria-hidden="true" /> What looks sound</li>
+              <li><CheckCircle2 aria-hidden="true" /> What deserves deeper analysis</li>
+              <li><CheckCircle2 aria-hidden="true" /> Whether Brian is the right person to help</li>
+            </ul>
           </div>
           <Link className="button button-dark" href="/book">Claim your free review <span>↗</span></Link>
         </div>
@@ -265,7 +269,7 @@ export default function Home() {
         </div>
         <div className="difference-copy">
           <div className="eyebrow"><span /> What makes Brian different</div>
-          <h2>He spent his career teaching finance—and fighting the damage high fees and poor performance can cause.</h2>
+          <h2>He spent his career teaching finance - and fighting the damage high fees and poor performance can cause.</h2>
           <p className="difference-lead">
             Brian brings together three perspectives that rarely sit in one room: finance professor, investment professional, and expert witness in complex financial matters.
           </p>
@@ -316,7 +320,7 @@ export default function Home() {
 
       <section className="final-cta" id="final-review">
         <div className="shell final-cta-inner">
-          <div><div className="eyebrow eyebrow-light"><span /> Start with a second opinion</div><h2>Your plan <em>may</em> be fine.<br /><em>Let’s know.</em></h2></div>
+          <div><div className="eyebrow eyebrow-light"><span /> Start with a second opinion</div><h2>Your plan <em className="em-white">may</em> be fine.<br /><em>Let’s know.</em></h2></div>
           <div><p>In 30 minutes, get a sharper view of the questions your plan should be able to answer.</p><Link className="button button-light" href="/book">Schedule the free fee & fiduciary review <span>↗</span></Link></div>
         </div>
       </section>

@@ -7,8 +7,8 @@ export function Footer() {
         <Link className="brand brand-light" href="/">
           <img className="brand-symbol" src="/brian-henderson-mark-reversed.png" alt="" />
           <span className="brand-copy">
-            <span className="brand-wordmark-crop"><img src="/brian-henderson-wordmark.png" alt="Brian Henderson" /></span>
-            <small>PhD, CFA · Retirement Plan Advisory</small>
+            <strong>Brian Henderson</strong>
+            <small>PhD, CFA · Financial Planner</small>
           </span>
         </Link>
         <div className="footer-links">
