@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Footer } from "../components/Footer";
 import { SiteNav } from "../components/SiteNav";
 
@@ -10,9 +9,9 @@ export const metadata: Metadata = {
 
 const moments = [
   ["Retirement is getting real", "Turn accounts, income needs, Social Security, taxes, and risk into one coordinated decision process."],
-  ["Your portfolio feels too complicated", "Understand what you own, why you own it, what it costs, and where complexity is no longer earning its keep."],
+  ["You worry you may not have enough", "Know whether your savings, spending, and investment strategy can support the life and retirement you want."],
   ["A major transition changed the picture", "Bring discipline to an inheritance, business sale, career change, concentrated position, or other high-stakes decision."],
-  ["You want a true second opinion", "Get a careful review of the strategy, attention, fees, and tradeoffs behind your current financial arrangement."],
+  ["You want to know you’re not leaving anything on the table", "Get a careful review of the strategy, attention, fees, taxes, and overlooked opportunities in your current financial arrangement."],
 ];
 
 export default function WealthPage() {
@@ -22,10 +21,10 @@ export default function WealthPage() {
       <section className="subhero shell">
         <div>
           <div className="eyebrow"><span /> Personal wealth management</div>
-          <h1>Your money should have a reasoned plan—not a pile of products.</h1>
+          <h1>A clearer path to the future you’ve worked for.</h1>
         </div>
         <div className="subhero-side">
-          <p>Financial planning and investment management for individuals and families who value evidence, transparency, and direct access to the person giving the advice.</p>
+          <p>I help individuals and families get a clearer path to retirement in one focused conversation - without sorting through it alone - backed by a PhD in finance, CFA expertise, and hands-on investment management.</p>
           <a className="button button-primary" href="mailto:info@srcmadvisors.com?subject=Personal%20wealth%20conversation%20with%20Brian">Request a 30-minute conversation <span>↗</span></a>
         </div>
       </section>
@@ -35,7 +34,7 @@ export default function WealthPage() {
           <div className="wealth-portrait"><img src="/brian-financial-advisor-headshot-v2.png" alt="Brian Henderson, PhD, CFA" /><span>Reston, Virginia / serving clients with disciplined financial guidance</span></div>
           <div className="wealth-thesis">
             <span className="quote-mark">“</span>
-            <blockquote>Who do you want running your portfolio: a salesperson—or someone who has spent a career understanding investments deeply?</blockquote>
+            <blockquote>Who do you want running your portfolio: a salesperson - or a passionate, relentless, well-known financial expert?</blockquote>
             <p>Brian combines academic finance, practical investment experience, and an investor-protection perspective to help clients make consequential decisions with more clarity.</p>
           </div>
         </div>
@@ -43,7 +42,7 @@ export default function WealthPage() {
 
       <section className="moments-section shell">
         <div className="section-heading">
-          <div><div className="eyebrow"><span /> When clients reach out</div><h2>Especially when the decision is too important to handle casually.</h2></div>
+          <div><div className="eyebrow"><span /> When clients reach out</div><h2>Your financial future is too important to leave to hope.</h2></div>
           <p>Brian’s work starts by understanding the real decision in front of you—not by forcing your situation into a preset product.</p>
         </div>
         <div className="moments-grid">
@@ -53,7 +52,7 @@ export default function WealthPage() {
 
       <section className="wealth-approach">
         <div className="shell wealth-approach-grid">
-          <div><div className="eyebrow eyebrow-light"><span /> Brian’s approach</div><h2>Understand more.<br />Simplify deliberately.<br /><em>Act with discipline.</em></h2></div>
+          <div><div className="eyebrow eyebrow-light"><span /> Brian’s approach</div><h2>Plan with purpose.<br />Invest with rigor.<br /><em>Stay confidently on track.</em></h2></div>
           <div className="approach-list">
             <div><b>01</b><h3>Build the full picture</h3><p>Goals, cash flow, assets, liabilities, taxes, risks, and the people who matter to the plan.</p></div>
             <div><b>02</b><h3>Examine the structure</h3><p>Portfolio design, costs, concentration, account placement, and the assumptions holding everything together.</p></div>
@@ -73,8 +72,8 @@ export default function WealthPage() {
 
       <section className="final-cta">
         <div className="shell final-cta-inner">
-          <div><div className="eyebrow eyebrow-light"><span /> A more thoughtful first conversation</div><h2>Bring the decision.<br /><em>Leave with clarity.</em></h2></div>
-          <div><p>Tell Brian what is changing, what is unclear, or what you want a second opinion on.</p><a className="button button-light" href="mailto:info@srcmadvisors.com?subject=Personal%20wealth%20conversation%20with%20Brian">Request a 30-minute conversation <span>↗</span></a><Link className="secondary-back" href="/">Looking for 401(k) plan advisory? Start here →</Link></div>
+          <div><div className="eyebrow eyebrow-light"><span /> A more thoughtful first conversation</div><h2>Start with your goals.<br /><em>Leave with clarity.</em></h2></div>
+          <div><p>A focused conversation can reveal whether your current plan supports the future you want - and where a better path may exist.</p><a className="button button-light" href="mailto:info@srcmadvisors.com?subject=Personal%20wealth%20conversation%20with%20Brian">Request a 30-minute conversation <span>↗</span></a></div>
         </div>
       </section>
       <Footer />

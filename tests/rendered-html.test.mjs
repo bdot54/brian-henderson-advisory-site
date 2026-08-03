@@ -43,7 +43,19 @@ test("server-renders the advisory homepage", async () => {
   assert.match(html, /Distinguished Professor of Finance/);
   assert.match(html, /Market Expert/);
   assert.match(html, /Investment strategy &amp; market analysis/);
-  assert.match(html, /I help small and midsized employers immediately improve retirement-plan value/);
+  assert.match(html, /I help small and midsized employers improve retirement-plan value without another time-consuming internal project/);
+});
+
+test("server-renders the personal wealth page", async () => {
+  const response = await render("/wealth");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /A clearer path to the future you’ve worked for/);
+  assert.match(html, /You worry you may not have enough/);
+  assert.match(html, /not leaving anything on the table/);
+  assert.match(html, /Stay confidently on track/);
+  assert.match(html, /Start with your goals/);
+  assert.doesNotMatch(html, /Looking for 401\(k\) plan advisory/);
 });
 
 const articles = [
