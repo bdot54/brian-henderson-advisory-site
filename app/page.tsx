@@ -6,7 +6,6 @@ import {
   ChartNoAxesCombined,
   CheckCircle2,
   ClipboardCheck,
-  Compass,
   Database,
   FileSearch,
   GraduationCap,
@@ -42,14 +41,14 @@ const roles = [
   },
   {
     icon: Database,
-    title: "Recordkeeper",
-    owner: "Separate provider",
+    title: "401(k)/403(b) recordkeeper",
+    owner: "Plan operations",
     body: "Maintains participant accounts, processes contributions and distributions, and provides the employee-facing platform and statements.",
   },
   {
     icon: ClipboardCheck,
-    title: "TPA",
-    owner: "Separate provider",
+    title: "Third-party administrator (TPA)",
+    owner: "Plan administration",
     body: "Handles plan administration such as testing, eligibility, census work, Form 5500 support, and plan-document coordination.",
   },
 ];
@@ -57,33 +56,33 @@ const roles = [
 const stakes = [
   {
     icon: TrendingUp,
-    title: "Expand contribution opportunities",
-    body: "Stronger participation and thoughtful plan design may help owners make fuller use of available contribution opportunities, subject to plan rules and testing.",
-  },
-  {
-    icon: ReceiptText,
-    title: "Stop unnecessary fee drag",
-    body: "High or poorly structured fees can quietly reduce participant balances and weaken the value employees receive from the benefit.",
-  },
-  {
-    icon: HandCoins,
-    title: "Get more return on the benefit",
-    body: "A plan creates more business value when employees understand it, participate, and use the match and investment options well.",
-  },
-  {
-    icon: UsersRound,
-    title: "Compete for the people you need",
-    body: "A well-designed, well-supported retirement plan can strengthen the employee experience and make the benefit easier to value.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Strengthen fiduciary confidence",
-    body: "Consistent review, clearer responsibilities, and better documentation help leadership show a prudent, repeatable oversight process.",
+    title: "Increase owner contribution potential",
+    body: "Higher participation across the plan can improve testing results and may allow owners to contribute more, subject to plan design and applicable limits.",
   },
   {
     icon: BriefcaseBusiness,
     title: "Give leadership time back",
     body: "A proactive advisor can coordinate the moving parts, surface decisions early, and keep HR, finance, and the committee out of the weeds.",
+  },
+  {
+    icon: ReceiptText,
+    title: "Reduce avoidable plan fees",
+    body: "High or poorly structured fees quietly reduce participant balances. Clear benchmarking helps separate fair costs from expenses that deserve scrutiny.",
+  },
+  {
+    icon: HandCoins,
+    title: "Help employees get more from the plan",
+    body: "A retirement plan works better when employees understand the match, participate consistently, and can make confident use of the investment options.",
+  },
+  {
+    icon: UsersRound,
+    title: "Do right by the staff trusting you",
+    body: "Employees trust leadership to choose and oversee a plan that gives their retirement savings a fair chance to grow without unnecessary cost or confusion.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Strengthen compliance and audit readiness",
+    body: "Consistent review, clear responsibilities, and sound documentation help leadership demonstrate a prudent, repeatable oversight process.",
   },
 ];
 
@@ -99,18 +98,21 @@ const insightCards = [
     icon: ChartNoAxesCombined,
     label: "Fees",
     title: "Why fees deserve more attention",
+    href: "/insights/fees",
     body: "Small differences in cost can become meaningful over time. Fee awareness is one of the most practical ways to evaluate whether a plan is serving its purpose.",
   },
   {
     icon: Radar,
     label: "Plan sponsors",
     title: "What plan sponsors should review",
+    href: "/insights/plan-sponsor-review",
     body: "Investment menus, fees, provider structure, governance, and participant needs change. A disciplined review reveals what deserves attention now.",
   },
   {
     icon: Spline,
     label: "Discipline",
     title: "When complexity stops helping",
+    href: "/insights/when-complexity-stops-helping",
     body: "More products, more jargon, and more moving parts do not automatically mean better advice. Discipline and transparency often serve plans better.",
   },
 ];
@@ -186,7 +188,7 @@ export default function Home() {
         </div>
         <div className="shell stakes-summary">
           <strong>The real question</strong>
-          <p>Is your plan producing the greatest practical value it can—for owners, employees, and the business—at a reasonable cost?</p>
+          <p>Is your plan producing the greatest practical value it can - for owners, employees, and the business - at a reasonable cost?</p>
           <Link className="text-link large" href="/book">Find out in a free 30-minute review <span>↗</span></Link>
         </div>
       </section>
@@ -235,12 +237,13 @@ export default function Home() {
                 <Icon aria-hidden="true" />
                 <div><small>{role.owner}</small><h3>{role.title}</h3><p>{role.body}</p></div>
                 <div className="advisor-qualities">
-                  <strong>Great advising is</strong>
-                  <span>Responsive</span>
-                  <span>Involved</span>
+                  <strong>A great advisor is:</strong>
                   <span>Proactive year-round</span>
-                  <span>Communicative when decisions matter</span>
+                  <span>Responsive</span>
+                  <span>Engaged</span>
+                  <span>Fluent in complex finance</span>
                 </div>
+                <p className="advisor-question">Is your current advisor all of these things?</p>
               </article>
             ))}
             <div className="role-connector" aria-hidden="true"><span /><i /></div>
@@ -297,16 +300,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="insights-section">
+      <section className="insights-section" id="insights">
         <div className="shell insights-heading">
           <div className="eyebrow"><span /> Three questions worth asking</div>
           <h2>Clear thinking for decisions that carry weight.</h2>
         </div>
         <div className="shell insight-grid">
-          {insightCards.map(({ icon: Icon, label, title, body }) => (
-            <Link className="insight-card" href="#final-review" key={title}>
+          {insightCards.map(({ icon: Icon, label, title, body, href }) => (
+            <Link className="insight-card" href={href} key={title}>
               <div className="insight-visual"><span>{label}</span><Icon aria-hidden="true" /></div>
-              <div className="insight-body"><h3>{title}</h3><p>{body}</p><strong>Review this with Brian <span>→</span></strong></div>
+              <div className="insight-body"><h3>{title}</h3><p>{body}</p><strong>Read more (3 min read) <span>→</span></strong></div>
             </Link>
           ))}
         </div>
@@ -320,7 +323,7 @@ export default function Home() {
       </section>
 
       <section className="wealth-teaser shell" id="wealth">
-        <div className="wealth-emblem"><Compass aria-hidden="true" /><span>For individuals<br />&amp; families</span></div>
+        <div className="wealth-scene"><img src="/brian-client-meeting.png" alt="Brian Henderson speaking with a couple about their financial plans" /></div>
         <div>
           <div className="eyebrow"><span /> The same rigor, applied personally</div>
           <h2>Personal wealth deserves the same disciplined thinking.</h2>
