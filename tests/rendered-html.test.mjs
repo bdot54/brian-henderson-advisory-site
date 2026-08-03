@@ -40,6 +40,9 @@ test("server-renders the advisory homepage", async () => {
   assert.match(html, /Personal Wealth Management/);
   assert.match(html, /bjhndrsn@gwu\.edu/);
   assert.match(html, /linkedin\.com\/in\/brian-henderson-63647950/);
+  assert.match(html, /Distinguished Professor of Finance/);
+  assert.match(html, /Market Expert/);
+  assert.match(html, /Investment strategy &amp; market analysis/);
 });
 
 const articles = [

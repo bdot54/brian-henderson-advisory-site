@@ -68,6 +68,7 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
 .proof-grid svg { flex: 0 0 auto; width: 25px; height: 25px; color: var(--blue); stroke-width: 1.6; }
 .proof-grid > div > span { display: flex; flex-direction: column; }
 .proof-grid strong { font-family: Georgia, serif; font-size: 24px; font-weight: 500; }
+.proof-grid > div:nth-child(3) strong { font-size: 19px; line-height: 1.12; }
 .proof-grid small { margin-top: 6px; color: var(--muted); font-size: 9px; letter-spacing: .09em; line-height: 1.35; text-transform: uppercase; }
 
 .audience-section { padding: 130px 0; background: var(--navy); color: white; overflow: hidden; }
