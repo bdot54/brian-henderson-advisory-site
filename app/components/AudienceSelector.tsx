@@ -6,16 +6,16 @@ import { useState } from "react";
 const audiences = [
   {
     short: "HR leader",
-    phrase: "I’m responsible for the plan—and I need a trusted second set of eyes.",
+    phrase: "I’m responsible for the plan - and I need a trusted second set of eyes.",
     title: "Make the plan easier to oversee, explain, and defend.",
-    body: "Brian helps you organize the right questions around fees, investments, providers, participation, and fiduciary process—then turns the answers into a clearer action list for leadership or the committee.",
+    body: "Brian helps you organize the right questions around fees, investments, providers, participation, and fiduciary process - then turns the answers into a clearer action list for leadership or the committee.",
     result: "A review that respects your time and makes your next committee conversation more useful.",
   },
   {
     short: "Owner / CEO",
     phrase: "I suspect our 401(k) costs too much or could do more for our company.",
     title: "See whether the plan is earning its place in the business.",
-    body: "Brian looks for unnecessary cost, missed design opportunities, and service gaps that can affect both employees and owners—without assuming the answer is an expensive provider change.",
+    body: "Brian looks for unnecessary cost, missed design opportunities, and service gaps that can affect both employees and owners - without assuming the answer is an expensive provider change.",
     result: "A business-minded view of where value may be leaking and what is worth fixing.",
   },
   {
@@ -30,7 +30,7 @@ const audiences = [
     phrase: "I’m worried our fiduciary process is running on autopilot.",
     title: "Turn recurring meetings into real oversight.",
     body: "Brian reviews how decisions are made and documented, where benchmarking may be stale, and which responsibilities need clearer ownership across the plan’s advisor, recordkeeper, TPA, and committee.",
-    result: "A more deliberate process—not more paperwork for its own sake.",
+    result: "A more deliberate process - not more paperwork for its own sake.",
   },
   {
     short: "Plan has outgrown support",

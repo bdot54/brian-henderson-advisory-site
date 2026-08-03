@@ -20,7 +20,7 @@ export default function WealthPage() {
         </div>
         <div className="subhero-side">
           <p>I help individuals and families build a clearer path to retirement, backed by decades of financial expertise and involved, one-on-one service. After one conversation, you’ll better understand where you stand and what deserves attention next.</p>
-          <a className="button button-primary" href="mailto:info@srcmadvisors.com?subject=Personal%20wealth%20conversation%20with%20Brian">Request a 30-minute conversation <span>↗</span></a>
+          <a className="button button-primary" href="mailto:bjhndrsn@gmail.com?subject=Personal%20wealth%20conversation%20with%20Brian">Request a 30-minute conversation <span>↗</span></a>
         </div>
       </section>
 
@@ -68,7 +68,7 @@ export default function WealthPage() {
       <section className="final-cta">
         <div className="shell final-cta-inner">
           <div><div className="eyebrow eyebrow-light"><span /> A more thoughtful first conversation</div><h2>Start with your goals.<br /><em>Leave with clarity.</em></h2></div>
-          <div><p>A focused conversation can reveal whether your current plan supports the future you want - and where a better path may exist.</p><a className="button button-light" href="mailto:info@srcmadvisors.com?subject=Personal%20wealth%20conversation%20with%20Brian">Request a 30-minute conversation <span>↗</span></a></div>
+          <div><p>A focused conversation can reveal whether your current plan supports the future you want - and where a better path may exist.</p><a className="button button-light" href="mailto:bjhndrsn@gmail.com?subject=Personal%20wealth%20conversation%20with%20Brian">Request a 30-minute conversation <span>↗</span></a></div>
         </div>
       </section>
       <Footer />

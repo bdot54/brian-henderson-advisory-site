@@ -24,12 +24,11 @@ img { display: block; max-width: 100%; }
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(251,250,247,.94); border-bottom: 1px solid var(--line); backdrop-filter: blur(16px); }
 .nav-inner { min-height: 92px; display: flex; align-items: center; justify-content: space-between; gap: 26px; }
 .brand { display: inline-flex; align-items: center; gap: 12px; flex: 0 0 auto; }
-.brand-symbol { width: 58px; height: 58px; object-fit: contain; }
-.brand-copy { display: flex; flex-direction: column; }
-.brand-wordmark-crop { position: relative; width: 270px; height: 48px; display: block; overflow: hidden; }
-.brand-wordmark-crop img { position: absolute; top: 0; left: 0; width: 270px; max-width: none; }
-.brand-copy small { margin-top: 1px; color: var(--muted); font-size: 9px; font-weight: 750; letter-spacing: .13em; line-height: 1.2; text-transform: uppercase; }
-.brand-light .brand-wordmark-crop img { filter: brightness(0) invert(1); }
+.brand-symbol { width: 56px; height: 56px; object-fit: contain; }
+.brand-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+.brand-copy strong { color: var(--navy); font-family: var(--font-bodoni), "Bodoni MT", Didot, Georgia, serif; font-size: 23px; font-weight: 500; letter-spacing: -.035em; line-height: .95; white-space: nowrap; }
+.brand-copy small { margin-top: 8px; color: var(--muted); font-size: 9px; font-weight: 750; letter-spacing: .12em; line-height: 1; text-transform: uppercase; white-space: nowrap; }
+.brand-light .brand-copy strong { color: var(--ivory); }
 .brand-light .brand-copy small { color: var(--mint); }
 .nav-inner nav { display: flex; gap: 32px; font-size: 13px; font-weight: 650; }
 .nav-inner nav a { position: relative; padding: 10px 0; }
@@ -56,7 +55,7 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
 .text-link { display: inline-flex; align-items: center; gap: 14px; padding: 10px 0 7px; border-bottom: 1px solid var(--ink); font-size: 13px; font-weight: 750; }
 .text-link span { color: var(--blue); }
 .text-link.large { font-size: 15px; }
-.microcopy { max-width: 690px; margin: 23px 0 0; padding: 16px 19px; border-left: 4px solid var(--blue); background: rgba(183,231,194,.25); color: var(--navy); font-size: 15px; font-weight: 650; line-height: 1.55; }
+.microcopy { max-width: 690px; margin: 23px 0 0; padding: 16px 19px; border-left: 4px solid var(--blue); background: rgba(183,231,194,.25); color: var(--navy); font-size: 15px; font-style: italic; font-weight: 650; line-height: 1.55; }
 .hero-visual { position: relative; min-height: 640px; padding: 0 0 35px 34px; }
 .portrait-accent { position: absolute; left: 0; top: 9%; bottom: 17%; width: 8px; background: var(--blue); }
 .portrait-frame { position: relative; width: 86%; height: 560px; margin-left: auto; background: #d5d2cb; overflow: hidden; box-shadow: 0 26px 60px rgba(7,24,44,.15); }
@@ -115,14 +114,17 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
 .review-intro h2 { font-size: clamp(42px, 4.6vw, 68px); }
 .review-intro > p { margin: 0; color: var(--muted); font-size: 16px; line-height: 1.65; }
 .review-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
-.review-card { min-height: 330px; padding: 29px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: white; }
-.review-card > span { color: var(--blue); font-size: 10px; letter-spacing: .15em; }
-.review-card h3 { margin: 75px 0 15px; font-family: Georgia, serif; font-size: 28px; font-weight: 500; }
+.review-card { min-height: 215px; padding: 25px 29px 27px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: white; }
+.review-card > span { display: block; color: var(--blue); font-family: Georgia, serif; font-size: 42px; letter-spacing: -.055em; line-height: 1; }
+.review-card h3 { margin: 20px 0 11px; font-family: Georgia, serif; font-size: 27px; font-weight: 500; }
 .review-card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
 .review-outcome { display: grid; grid-template-columns: 1fr auto; gap: 45px; align-items: center; padding: 39px 42px; background: var(--mint); }
 .outcome-copy { display: flex; flex-direction: column; gap: 7px; }
 .outcome-kicker { font-family: Georgia, serif; font-size: 34px; font-weight: 500; line-height: 1.1; }
 .review-outcome p { max-width: 760px; margin: 0; color: #2c413a; font-size: 15px; line-height: 1.55; }
+.outcome-list { display: flex; flex-wrap: wrap; gap: 10px 24px; margin: 7px 0 0; padding: 0; list-style: none; color: #2c413a; font-size: 15px; line-height: 1.45; }
+.outcome-list li { display: inline-flex; align-items: center; gap: 7px; }
+.outcome-list svg { width: 18px; height: 18px; flex: 0 0 auto; color: var(--navy); stroke-width: 2.2; }
 
 .roles-section { padding: 130px 0; background: var(--ivory); }
 .role-orchestration { max-width: 1080px; margin: 0 auto; }
@@ -201,6 +203,7 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
 .final-cta-inner { display: grid; grid-template-columns: 1.1fr .9fr; gap: 100px; align-items: end; }
 .final-cta h2 { font-size: clamp(50px, 6vw, 85px); }
 .final-cta h2 em { color: var(--mint); }
+.final-cta h2 em.em-white { color: inherit; }
 .final-cta-inner > div:last-child { display: flex; flex-direction: column; align-items: flex-start; gap: 25px; }
 .final-cta-inner p { max-width: 510px; margin: 0; font-size: 19px; line-height: 1.6; }
 .secondary-back { color: rgba(255,255,255,.85); font-size: 12px; border-bottom: 1px solid rgba(255,255,255,.5); }
@@ -342,9 +345,8 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
   .nav-inner { gap: 12px; }
   .brand { gap: 7px; }
   .brand-symbol { width: 39px; height: 39px; }
-  .brand-wordmark-crop { width: 132px; height: 25px; }
-  .brand-wordmark-crop img { width: 132px; }
-  .brand-copy small { font-size: 7px; letter-spacing: .07em; }
+  .brand-copy strong { font-size: 23px; }
+  .brand-copy small { margin-top: 5px; font-size: 6.5px; letter-spacing: .055em; }
   .hero { grid-template-columns: 1fr; gap: 45px; min-height: auto; padding-top: 70px; padding-bottom: 70px; }
   .hero h1, .subhero h1 { font-size: 55px; }
   .hero-lead { font-size: 18px; }
@@ -373,8 +375,8 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
   .stakes-grid article { min-height: 250px; }
   .stakes-summary { grid-template-columns: 1fr; padding-bottom: 0; }
   .stakes-summary .text-link { grid-column: auto; }
-  .review-card { min-height: 245px; }
-  .review-card h3 { margin-top: 48px; }
+  .review-card { min-height: 0; padding: 24px; }
+  .review-card h3 { margin-top: 18px; }
   .review-outcome { grid-template-columns: 1fr; padding: 28px; }
   .outcome-kicker { font-size: 31px; }
   .role-advisor { width: 100%; }

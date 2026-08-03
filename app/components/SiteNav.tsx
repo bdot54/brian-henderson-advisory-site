@@ -7,8 +7,8 @@ export function SiteNav() {
         <Link className="brand" href="/" aria-label="Brian Henderson home">
           <img className="brand-symbol" src="/brian-henderson-mark-navy.png" alt="" />
           <span className="brand-copy">
-            <span className="brand-wordmark-crop"><img src="/brian-henderson-wordmark.png" alt="Brian Henderson" /></span>
-            <small>PhD, CFA · Retirement Plan Advisory</small>
+            <strong>Brian Henderson</strong>
+            <small>PhD, CFA · Financial Planner</small>
           </span>
         </Link>
         <nav aria-label="Main navigation">

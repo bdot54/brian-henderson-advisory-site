@@ -7,7 +7,7 @@ export default function PlanSponsorReviewInsight() {
       title="What plan sponsors should review"
       dek="A good plan review is not a ceremonial reading of last quarter’s returns followed by sandwiches. It is an oversight process."
     >
-      <p className="article-lead">A retirement plan changes even when nobody intentionally changes it. Assets grow, employees come and go, fees drift, investment options evolve, laws move, and service relationships age. A plan that was sensible three years ago may still be sensible today—but “probably” is not much of a fiduciary process.</p>
+      <p className="article-lead">A retirement plan changes even when nobody intentionally changes it. Assets grow, employees come and go, fees drift, investment options evolve, laws move, and service relationships age. A plan that was sensible three years ago may still be sensible today - but “probably” is not much of a fiduciary process.</p>
 
       <h2>Review the plan from six angles</h2>
       <p><strong>Fees.</strong> Understand the all-in cost, who pays it, and whether it remains reasonable for a plan of similar size and complexity.</p>

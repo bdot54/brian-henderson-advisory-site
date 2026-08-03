@@ -22,7 +22,7 @@ export function BookForm() {
       `Preferred timing: ${data.get("timing")}`,
     ].join("\n");
     setSent(true);
-    window.location.href = `mailto:info@srcmadvisors.com?subject=${encodeURIComponent("Free 401(k) fee & fiduciary review")}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:bjhndrsn@gmail.com?subject=${encodeURIComponent("Free 401(k) fee & fiduciary review")}&body=${encodeURIComponent(body)}`;
   }
 
   return (

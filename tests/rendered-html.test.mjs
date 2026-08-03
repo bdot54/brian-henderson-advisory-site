@@ -40,13 +40,19 @@ test("server-renders the advisory homepage", async () => {
   assert.match(html, /Read more \(3 min read\)/);
   assert.match(html, /Personal Wealth Management/);
   assert.match(html, /brian-henderson-mark-navy\.png/);
-  assert.match(html, /PhD, CFA · Retirement Plan Advisory/);
+  assert.match(html, /PhD, CFA · Financial Planner/);
+  assert.match(html, /A no-risk first step/);
   assert.match(html, /bjhndrsn@gmail\.com/);
   assert.match(html, /linkedin\.com\/in\/brian-henderson-63647950/);
   assert.match(html, /Distinguished Professor of Finance/);
   assert.match(html, /Market Expert/);
   assert.match(html, /Investment strategy &amp; market analysis/);
-  assert.match(html, /I help small and midsized employers improve retirement-plan value without another time-consuming internal project/);
+  assert.match(html, /I help plan sponsors uncover hidden costs and overlooked risks/);
+  assert.match(html, /objective benchmarking/);
+  assert.match(html, /hands-on support from an expert/);
+  assert.match(html, /You leave knowing\.\.\./);
+  assert.match(html, /Get a custom presentation outlining/);
+  assert.doesNotMatch(html, /—/);
 });
 
 test("server-renders the personal wealth page", async () => {
