@@ -131,7 +131,7 @@ export default function Home() {
             <Link className="button button-primary" href="/book">Book your free 30-minute review <span>↗</span></Link>
             <Link className="text-link" href="#why-brian">Why Brian is different <span>↓</span></Link>
           </div>
-          <p className="microcopy">No obligation. No provider change required. Start with a candid second opinion.</p>
+          <p className="microcopy">We help small and midsized employers immediately improve retirement-plan value for their employees, without taking on another time-consuming internal project, all backed by independent data analysis and expert financial oversight.</p>
         </div>
 
         <div className="hero-visual">
@@ -141,7 +141,7 @@ export default function Home() {
           </div>
           <div className="hero-identity">
             <strong>Brian Henderson, PhD, CFA</strong>
-            <span>Professor of Finance · Financial Advisor · Reston, Virginia</span>
+            <span>Distinguished Professor of Finance · Financial Advisor · Reston, Virginia</span>
           </div>
         </div>
       </section>
