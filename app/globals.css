@@ -52,7 +52,7 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
 .text-link { display: inline-flex; align-items: center; gap: 14px; padding: 10px 0 7px; border-bottom: 1px solid var(--ink); font-size: 13px; font-weight: 750; }
 .text-link span { color: var(--blue); }
 .text-link.large { font-size: 15px; }
-.microcopy { margin: 18px 0 0; color: #788593; font-size: 12px; }
+.microcopy { max-width: 690px; margin: 23px 0 0; padding: 16px 19px; border-left: 4px solid var(--blue); background: rgba(183,231,194,.25); color: var(--navy); font-size: 15px; font-weight: 650; line-height: 1.55; }
 .hero-visual { position: relative; min-height: 640px; padding: 0 0 35px 34px; }
 .portrait-accent { position: absolute; left: 0; top: 9%; bottom: 17%; width: 8px; background: var(--blue); }
 .portrait-frame { position: relative; width: 86%; height: 560px; margin-left: auto; background: #d5d2cb; overflow: hidden; box-shadow: 0 26px 60px rgba(7,24,44,.15); }
