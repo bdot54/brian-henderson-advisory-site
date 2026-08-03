@@ -38,7 +38,7 @@ test("server-renders the advisory homepage", async () => {
   assert.match(html, /brian-client-meeting\.png/);
   assert.match(html, /Read more \(3 min read\)/);
   assert.match(html, /Personal Wealth Management/);
-  assert.match(html, /bjhndrsn@gwu\.edu/);
+  assert.match(html, /bjhndrsn@gmail\.com/);
   assert.match(html, /linkedin\.com\/in\/brian-henderson-63647950/);
   assert.match(html, /Distinguished Professor of Finance/);
   assert.match(html, /Market Expert/);
