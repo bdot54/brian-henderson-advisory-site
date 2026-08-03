@@ -69,7 +69,7 @@ export function AudienceSelector() {
         <h3>{item.title}</h3>
         <p>{item.body}</p>
         <div className="audience-result"><b>What you gain</b><span>{item.result}</span></div>
-        <Link className="button button-light" href="/book">Book the free review <span>↗</span></Link>
+        <Link className="button button-light" href="/book">Schedule the free review <span>↗</span></Link>
       </div>
     </div>
   );

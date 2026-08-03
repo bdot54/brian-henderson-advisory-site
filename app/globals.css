@@ -104,7 +104,7 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
 .stakes-summary > strong { color: var(--blue-dark); font-size: 10px; letter-spacing: .15em; text-transform: uppercase; }
 .stakes-summary > p { max-width: 720px; margin: 0; font-family: Georgia, serif; font-size: 21px; line-height: 1.35; }
 
-.review-section { padding-top: 140px; padding-bottom: 140px; }
+.review-section { padding-top: 140px; padding-bottom: 65px; }
 .review-intro { display: grid; grid-template-columns: .35fr 1.05fr .6fr; gap: 55px; align-items: end; margin-bottom: 72px; }
 .offer-mark { font-family: Georgia, serif; font-size: 135px; line-height: .8; letter-spacing: -.07em; color: var(--blue); }
 .review-intro h2 { font-size: clamp(42px, 4.6vw, 68px); }
@@ -134,6 +134,7 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
 .advisor-qualities strong, .advisor-qualities span { padding: 5px 16px; font-size: 10px; letter-spacing: .08em; line-height: 1.35; text-transform: uppercase; }
 .advisor-qualities strong { padding-left: 0; color: var(--mint); }
 .advisor-qualities span { color: #d7e0e8; border-left: 1px solid rgba(255,255,255,.18); }
+.advisor-question { grid-column: 1 / -1; margin: 5px 0 0 !important; color: white !important; font-family: Georgia, serif; font-size: 17px !important; font-style: italic; text-align: right; }
 .role-connector { position: relative; height: 92px; }
 .role-connector > span { position: absolute; top: 0; left: 50%; height: 46px; border-left: 2px solid var(--blue); }
 .role-connector > i { position: absolute; top: 46px; left: 25%; right: 25%; border-top: 2px solid var(--blue); }
@@ -184,10 +185,10 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
 .insight-body strong { margin-top: auto; padding-top: 32px; color: var(--blue-dark); font-size: 11px; letter-spacing: .09em; text-transform: uppercase; }
 .insight-body strong span { margin-left: 10px; font-size: 17px; }
 
-.wealth-teaser { display: grid; grid-template-columns: .22fr .9fr .88fr; gap: 55px; align-items: center; padding-top: 125px; padding-bottom: 125px; }
-.wealth-emblem { width: 145px; aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 13px; border: 1px solid var(--line); background: var(--ivory); color: var(--blue-dark); text-align: center; }
-.wealth-emblem svg { width: 36px; height: 36px; stroke-width: 1.4; }
-.wealth-emblem span { font-size: 9px; font-weight: 800; letter-spacing: .11em; line-height: 1.45; text-transform: uppercase; }
+.wealth-teaser { display: grid; grid-template-columns: .8fr .9fr .9fr; gap: 48px; align-items: center; padding-top: 125px; padding-bottom: 125px; }
+.wealth-scene { position: relative; overflow: hidden; box-shadow: 0 22px 45px rgba(7,24,44,.12); }
+.wealth-scene::after { content: "Personal wealth"; position: absolute; left: 0; bottom: 0; padding: 11px 15px; background: var(--navy); color: white; font-size: 9px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.wealth-scene img { width: 100%; aspect-ratio: 1.12; object-fit: cover; object-position: 48% center; }
 .wealth-teaser h2 { margin: 18px 0 0; font-family: Georgia, serif; font-size: clamp(42px, 4vw, 62px); font-weight: 400; line-height: 1.05; }
 .wealth-copy p { color: var(--muted); font-size: 17px; line-height: 1.65; }
 
@@ -198,6 +199,22 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
 .final-cta-inner > div:last-child { display: flex; flex-direction: column; align-items: flex-start; gap: 25px; }
 .final-cta-inner p { max-width: 510px; margin: 0; font-size: 19px; line-height: 1.6; }
 .secondary-back { color: rgba(255,255,255,.85); font-size: 12px; border-bottom: 1px solid rgba(255,255,255,.5); }
+
+/* Insight articles */
+.article-page { background: var(--paper); }
+.article-hero { max-width: 970px; padding-top: 105px; padding-bottom: 80px; }
+.article-back { display: inline-block; margin-bottom: 62px; color: var(--muted); font-size: 12px; font-weight: 700; }
+.article-hero h1 { max-width: 900px; margin: 24px 0 28px; font-family: Georgia, serif; font-size: clamp(56px, 7vw, 96px); font-weight: 400; line-height: .98; letter-spacing: -.055em; }
+.article-hero > p { max-width: 770px; margin: 0; color: var(--muted); font-family: Georgia, serif; font-size: 25px; line-height: 1.45; }
+.article-body { max-width: 800px; padding-bottom: 95px; }
+.article-body p, .article-body li { color: #425467; font-size: 18px; line-height: 1.82; }
+.article-body .article-lead { margin-top: 0; color: var(--ink); font-family: Georgia, serif; font-size: 26px; line-height: 1.58; }
+.article-body h2 { margin: 62px 0 18px; font-family: Georgia, serif; font-size: 39px; font-weight: 500; line-height: 1.15; letter-spacing: -.025em; }
+.article-body ul { margin: 25px 0; padding-left: 25px; }
+.article-body li { padding: 6px 0 6px 8px; }
+.article-body strong { color: var(--ink); }
+.article-return { max-width: 800px; display: flex; align-items: center; justify-content: space-between; gap: 35px; padding-top: 36px; padding-bottom: 70px; border-top: 1px solid var(--line); }
+.article-return p { margin: 0; font-family: Georgia, serif; font-size: 22px; }
 
 .site-footer { background: var(--navy); color: white; }
 .footer-top { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; padding-top: 80px; padding-bottom: 80px; border-bottom: 1px solid rgba(255,255,255,.14); }
@@ -292,7 +309,7 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
   .insight-card { min-height: 0; display: grid; grid-template-columns: .75fr 1.25fr; }
   .review-outcome { grid-template-columns: 1fr; }
   .review-outcome .button { justify-self: start; }
-  .wealth-teaser { grid-template-columns: .18fr 1fr; }
+  .wealth-teaser { grid-template-columns: .65fr 1fr; }
   .wealth-copy { grid-column: 2; }
   .book-page { gap: 5vw; }
 }
@@ -345,6 +362,7 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
   .role-support-grid { grid-template-columns: 1fr; gap: 18px; }
   .advisor-qualities { align-items: flex-start; flex-direction: column; }
   .advisor-qualities strong, .advisor-qualities span { padding: 6px 0; border-left: 0; }
+  .advisor-question { text-align: left; }
   .difference-section { grid-template-columns: 1fr; gap: 70px; padding-top: 100px; padding-bottom: 100px; }
   .difference-photo { width: 86%; }
   .source-links { flex-direction: column; align-items: flex-start; gap: 15px; }
@@ -357,7 +375,7 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
   .insight-card { display: flex; }
   .insight-visual { min-height: 220px; }
   .wealth-teaser { grid-template-columns: 1fr; gap: 25px; padding-top: 90px; padding-bottom: 90px; }
-  .wealth-emblem { width: 125px; }
+  .wealth-scene { max-width: 520px; }
   .wealth-copy { grid-column: auto; }
   .final-cta-inner, .footer-top, .subhero, .wealth-portrait-grid, .wealth-approach-grid, .book-page { grid-template-columns: 1fr; gap: 55px; }
   .final-cta { padding: 90px 0; }
@@ -372,6 +390,16 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
   .book-form { padding: 26px 20px; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
   .disclosure div { flex-direction: column; gap: 12px; }
+  .review-section { padding-bottom: 50px; }
+  .article-hero { padding-top: 75px; padding-bottom: 55px; }
+  .article-back { margin-bottom: 42px; }
+  .article-hero h1 { font-size: 52px; }
+  .article-hero > p { font-size: 21px; }
+  .article-body { padding-bottom: 70px; }
+  .article-body p, .article-body li { font-size: 17px; }
+  .article-body .article-lead { font-size: 23px; }
+  .article-body h2 { margin-top: 48px; font-size: 34px; }
+  .article-return { align-items: flex-start; flex-direction: column; }
 }
 
 @media (prefers-reduced-motion: reduce) {
