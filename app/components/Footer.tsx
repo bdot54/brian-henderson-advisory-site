@@ -5,11 +5,14 @@ export function Footer() {
     <footer className="site-footer">
       <div className="shell footer-top">
         <Link className="brand brand-light" href="/">
-          <span className="brand-mark">BH</span>
-          <span><b>Brian Henderson</b><small>PhD, CFA</small></span>
+          <img className="brand-symbol" src="/brian-henderson-mark-reversed.png" alt="" />
+          <span className="brand-copy">
+            <span className="brand-wordmark-crop"><img src="/brian-henderson-wordmark.png" alt="Brian Henderson" /></span>
+            <small>PhD, CFA · Retirement Plan Advisory</small>
+          </span>
         </Link>
         <div className="footer-links">
-          <div><small>Explore</small><Link href="/#review">401(k) advisory</Link><Link href="/wealth">Personal Wealth Management</Link><Link href="/#why-brian">About Brian</Link></div>
+          <div><small>Explore</small><Link href="/#review">401(k) Advisory</Link><Link href="/wealth">Personal Wealth Management</Link><Link href="/#why-brian">About Brian</Link></div>
           <div><small>Connect</small><Link href="/book">Book a review</Link><a href="mailto:bjhndrsn@gmail.com">bjhndrsn@gmail.com</a><a href="https://www.linkedin.com/in/brian-henderson-63647950/" target="_blank" rel="noreferrer">LinkedIn ↗</a><span>Reston, Virginia</span></div>
         </div>
       </div>
