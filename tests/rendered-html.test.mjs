@@ -52,6 +52,9 @@ test("server-renders the advisory homepage", async () => {
   assert.match(html, /hands-on support from an expert/);
   assert.match(html, /You leave knowing\.\.\./);
   assert.match(html, /Get a custom presentation outlining/);
+  assert.match(html, /Schedule your free review/);
+  assert.doesNotMatch(html, /Claim your free review/);
+  assert.doesNotMatch(html, /BH \/ 01/);
   assert.doesNotMatch(html, /—/);
 });
 

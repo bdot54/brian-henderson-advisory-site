@@ -187,7 +187,6 @@ export default function Home() {
         <div className="shell stakes-summary">
           <strong>The real question</strong>
           <p>Is your plan producing the greatest practical value it can - for owners, employees, and the business - at a reasonable cost?</p>
-          <Link className="text-link large" href="/book">Find out in a free 30-minute review <span>↗</span></Link>
         </div>
       </section>
 
@@ -220,7 +219,7 @@ export default function Home() {
               <li><CheckCircle2 aria-hidden="true" /> Whether Brian is the right person to help</li>
             </ul>
           </div>
-          <Link className="button button-dark" href="/book">Claim your free review <span>↗</span></Link>
+          <Link className="button button-dark" href="/book">Schedule your free review <span>↗</span></Link>
         </div>
       </section>
 
@@ -264,7 +263,6 @@ export default function Home() {
       <section className="difference-section shell" id="why-brian">
         <div className="difference-photo">
           <img src="/brian-financial-advisor-headshot-v3.png" alt="Brian Henderson" />
-          <div className="photo-index">BH / 01</div>
         </div>
         <div className="difference-copy">
           <div className="eyebrow"><span /> What makes Brian different</div>
@@ -272,16 +270,16 @@ export default function Home() {
           <p className="difference-lead">
             Brian brings together three perspectives that rarely sit in one room: finance professor, investment professional, and expert witness in complex financial matters.
           </p>
-          <div className="difference-points">
-            <div><b>01</b><p><strong>Professor, not product-pusher.</strong> Brian’s instinct is to teach the decision, explain the tradeoffs, and make complexity useful.</p></div>
-            <div><b>02</b><p><strong>Research tested in the real world.</strong> His work spans investment analysis, portfolio management, risk, and peer-reviewed financial research.</p></div>
-            <div><b>03</b><p><strong>An investor-protection lens.</strong> Expert-witness work sharpened his attention to excessive fees, poor products, weak plan design, and avoidable harm.</p></div>
-            <div><b>04</b><p><strong>A quarterback mindset.</strong> He helps the sponsor coordinate advisor, recordkeeper, TPA, and other professionals around a clearer plan.</p></div>
-          </div>
-          <div className="source-links">
-            <a href="https://business.gwu.edu/brian-j-henderson" target="_blank" rel="noreferrer">GW faculty profile ↗</a>
-            <a href="https://srcmadvisors.com/about/srcm-team/advisors/" target="_blank" rel="noreferrer">Advisor profile ↗</a>
-          </div>
+        </div>
+        <div className="difference-points">
+          <div><b>01</b><p><strong>Professor, not product-pusher.</strong> Brian’s instinct is to teach the decision, explain the tradeoffs, and make complexity useful.</p></div>
+          <div><b>02</b><p><strong>Research tested in the real world.</strong> His work spans investment analysis, portfolio management, risk, and peer-reviewed financial research.</p></div>
+          <div><b>03</b><p><strong>An investor-protection lens.</strong> Expert-witness work sharpened his attention to excessive fees, poor products, weak plan design, and avoidable harm.</p></div>
+          <div><b>04</b><p><strong>A quarterback mindset.</strong> He helps the sponsor coordinate advisor, recordkeeper, TPA, and other professionals around a clearer plan.</p></div>
+        </div>
+        <div className="source-links">
+          <a href="https://business.gwu.edu/brian-j-henderson" target="_blank" rel="noreferrer">GW faculty profile ↗</a>
+          <a href="https://srcmadvisors.com/about/srcm-team/advisors/" target="_blank" rel="noreferrer">Advisor profile ↗</a>
         </div>
       </section>
 
@@ -319,7 +317,7 @@ export default function Home() {
 
       <section className="final-cta" id="final-review">
         <div className="shell final-cta-inner">
-          <div><div className="eyebrow eyebrow-light"><span /> Start with a second opinion</div><h2>Your plan <em className="em-white">may</em> be fine.<br /><em>Let’s know.</em></h2></div>
+          <div><div className="eyebrow eyebrow-light"><span /> Start with a second opinion</div><h2>Your plan <em className="em-white">may</em> be fine. <em>Let’s know.</em></h2></div>
           <div><p>In 30 minutes, get a sharper view of the questions your plan should be able to answer.</p><Link className="button button-light" href="/book">Schedule the free fee & fiduciary review <span>↗</span></Link></div>
         </div>
       </section>
