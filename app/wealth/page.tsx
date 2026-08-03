@@ -32,7 +32,7 @@ export default function WealthPage() {
 
       <section className="wealth-portrait-section">
         <div className="shell wealth-portrait-grid">
-          <div className="wealth-portrait"><img src="/brian-henderson.jpg" alt="Brian Henderson, PhD, CFA" /><span>Reston, Virginia / serving clients with disciplined financial guidance</span></div>
+          <div className="wealth-portrait"><img src="/brian-financial-advisor-headshot-v2.png" alt="Brian Henderson, PhD, CFA" /><span>Reston, Virginia / serving clients with disciplined financial guidance</span></div>
           <div className="wealth-thesis">
             <span className="quote-mark">“</span>
             <blockquote>Who do you want running your portfolio: a salesperson—or someone who has spent a career understanding investments deeply?</blockquote>

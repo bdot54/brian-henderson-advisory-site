@@ -1,4 +1,19 @@
 import Link from "next/link";
+import {
+  Award,
+  BookOpenCheck,
+  BriefcaseBusiness,
+  ClipboardCheck,
+  Database,
+  GraduationCap,
+  HandCoins,
+  Landmark,
+  ReceiptText,
+  Scale,
+  ShieldCheck,
+  TrendingUp,
+  UsersRound,
+} from "lucide-react";
 import { AudienceSelector } from "./components/AudienceSelector";
 import { Footer } from "./components/Footer";
 import { SiteNav } from "./components/SiteNav";
@@ -12,22 +27,55 @@ const reviewItems = [
 
 const roles = [
   {
-    number: "01",
+    icon: BriefcaseBusiness,
     title: "Financial advisor",
     owner: "Brian’s role",
     body: "Helps the plan sponsor evaluate investments, fees, providers, plan design, and the decisions that connect the whole retirement-plan team.",
   },
   {
-    number: "02",
+    icon: Database,
     title: "Recordkeeper",
     owner: "Separate provider",
     body: "Maintains participant accounts, processes contributions and distributions, and provides the employee-facing platform and statements.",
   },
   {
-    number: "03",
+    icon: ClipboardCheck,
     title: "TPA",
     owner: "Separate provider",
     body: "Handles plan administration such as testing, eligibility, census work, Form 5500 support, and plan-document coordination.",
+  },
+];
+
+const stakes = [
+  {
+    icon: TrendingUp,
+    title: "Expand contribution opportunities",
+    body: "Stronger participation and thoughtful plan design may help owners make fuller use of available contribution opportunities, subject to plan rules and testing.",
+  },
+  {
+    icon: ReceiptText,
+    title: "Stop unnecessary fee drag",
+    body: "High or poorly structured fees can quietly reduce participant balances and weaken the value employees receive from the benefit.",
+  },
+  {
+    icon: HandCoins,
+    title: "Get more return on the benefit",
+    body: "A plan creates more business value when employees understand it, participate, and use the match and investment options well.",
+  },
+  {
+    icon: UsersRound,
+    title: "Compete for the people you need",
+    body: "A well-designed, well-supported retirement plan can strengthen the employee experience and make the benefit easier to value.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Strengthen fiduciary confidence",
+    body: "Consistent review, clearer responsibilities, and better documentation help leadership show a prudent, repeatable oversight process.",
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: "Give leadership time back",
+    body: "A proactive advisor can coordinate the moving parts, surface decisions early, and keep HR, finance, and the committee out of the weeds.",
   },
 ];
 
@@ -51,25 +99,24 @@ export default function Home() {
         </div>
 
         <div className="hero-visual">
+          <div className="portrait-accent" aria-hidden="true" />
           <div className="portrait-frame">
-            <img src="/brian-henderson.jpg" alt="Brian Henderson, PhD, CFA" />
-            <div className="portrait-caption">
-              <span>Brian Henderson</span>
-              <small>PhD · CFA · Professor of Finance</small>
-            </div>
+            <img src="/brian-financial-advisor-headshot-v2.png" alt="Brian Henderson, PhD, CFA" />
           </div>
-          <div className="hero-note note-top"><b>01</b> Academic depth<br />made practical.</div>
-          <div className="hero-note note-bottom"><b>02</b> One advisor helping<br />quarterback the team.</div>
+          <div className="hero-identity">
+            <strong>Brian Henderson, PhD, CFA</strong>
+            <span>Professor of Finance · Financial Advisor · Reston, Virginia</span>
+          </div>
         </div>
       </section>
 
       <section className="proof-rail" aria-label="Brian's credentials">
         <div className="shell proof-grid">
-          <div><strong>PhD</strong><span>Finance</span></div>
-          <div><strong>CFA</strong><span>Charterholder</span></div>
-          <div><strong>Professor</strong><span>George Washington University</span></div>
-          <div><strong>Researcher</strong><span>Peer-reviewed financial research</span></div>
-          <div><strong>Expert witness</strong><span>Complex financial matters</span></div>
+          <div><GraduationCap aria-hidden="true" /><span><strong>PhD</strong><small>Finance</small></span></div>
+          <div><Award aria-hidden="true" /><span><strong>CFA</strong><small>Charterholder</small></span></div>
+          <div><Landmark aria-hidden="true" /><span><strong>Professor</strong><small>George Washington University</small></span></div>
+          <div><BookOpenCheck aria-hidden="true" /><span><strong>Researcher</strong><small>Peer-reviewed financial research</small></span></div>
+          <div><Scale aria-hidden="true" /><span><strong>Expert witness</strong><small>Complex financial matters</small></span></div>
         </div>
       </section>
 
@@ -84,15 +131,39 @@ export default function Home() {
         <AudienceSelector />
       </section>
 
+      <section className="stakes-section" id="why-care">
+        <div className="shell section-heading">
+          <div>
+            <div className="eyebrow"><span /> Why should a plan leader care?</div>
+            <h2>What could an underperforming plan be leaving on the table?</h2>
+          </div>
+          <p>Your 401(k) is more than an employee benefit. It is a meaningful business expense, a tool for attracting and retaining talent, a tax-advantaged savings vehicle, and an ongoing fiduciary responsibility.</p>
+        </div>
+        <div className="shell stakes-grid">
+          {stakes.map(({ icon: Icon, title, body }) => (
+            <article key={title}>
+              <Icon aria-hidden="true" />
+              <h3>{title}</h3>
+              <p>{body}</p>
+            </article>
+          ))}
+        </div>
+        <div className="shell stakes-summary">
+          <strong>The real question</strong>
+          <p>Is your plan producing the greatest practical value it can—for owners, employees, and the business—at a reasonable cost?</p>
+          <Link className="text-link large" href="/book">Find out in a free 30-minute review <span>↗</span></Link>
+        </div>
+      </section>
+
       <section className="review-section shell" id="review">
         <div className="review-intro">
           <div className="offer-mark">30</div>
           <div>
-            <div className="eyebrow"><span /> The offer</div>
+            <div className="eyebrow"><span /> A low-risk first step</div>
             <h2>Thirty useful minutes.<br />A much clearer next step.</h2>
           </div>
           <p>
-            This is a fiduciary-minded first look—not a generic sales call. Brian will ask the right questions, surface what deserves attention, and explain what your next move could be.
+            This fiduciary-minded first look is designed to provide useful insights, create immediate value, and demonstrate what thoughtful fiduciary guidance can look like. Brian will ask the right questions, surface what deserves attention, and explain what your next move could be.
           </p>
         </div>
         <div className="review-grid">
@@ -105,8 +176,10 @@ export default function Home() {
           ))}
         </div>
         <div className="review-outcome">
-          <div className="outcome-kicker">You leave knowing</div>
-          <p>what looks sound, what deserves deeper analysis, and whether Brian is the right person to help.</p>
+          <div className="outcome-copy">
+            <div className="outcome-kicker">You leave knowing</div>
+            <p>what looks sound, what deserves deeper analysis, and whether Brian is the right person to help.</p>
+          </div>
           <Link className="button button-dark" href="/book">Claim your free review <span>↗</span></Link>
         </div>
       </section>
@@ -116,25 +189,34 @@ export default function Home() {
           <div className="section-heading">
             <div>
               <div className="eyebrow"><span /> Less confusion, better coordination</div>
-              <h2>Your 401(k) has a team.<br />Brian helps it work like one.</h2>
+              <h2>Your 401(k) has a team.<br />Brian makes it work like one.</h2>
             </div>
             <p>A financial advisor is not the recordkeeper or the third-party administrator. Brian’s role is to help the plan sponsor see the whole field and coordinate sound decisions across the team.</p>
           </div>
-          <div className="role-list">
-            {roles.map((role) => (
-              <article key={role.title}>
-                <span className="role-number">{role.number}</span>
-                <div><small>{role.owner}</small><h3>{role.title}</h3></div>
-                <p>{role.body}</p>
+          <div className="role-orchestration">
+            {roles.slice(0, 1).map(({ icon: Icon, ...role }) => (
+              <article className="role-node role-advisor" key={role.title}>
+                <Icon aria-hidden="true" />
+                <div><small>{role.owner}</small><h3>{role.title}</h3><p>{role.body}</p></div>
               </article>
             ))}
+            <div className="role-connector" aria-hidden="true"><span /><i /></div>
+            <div className="role-support-grid">
+              {roles.slice(1).map(({ icon: Icon, ...role }) => (
+                <article className="role-node" key={role.title}>
+                  <Icon aria-hidden="true" />
+                  <div><small>{role.owner}</small><h3>{role.title}</h3><p>{role.body}</p></div>
+                </article>
+              ))}
+            </div>
+            <div className="role-principle"><strong>One coordinated plan team</strong><span>Each provider keeps a distinct role. Brian connects the work and helps the plan sponsor keep the whole system pointed in the same direction.</span></div>
           </div>
         </div>
       </section>
 
       <section className="difference-section shell" id="why-brian">
         <div className="difference-photo">
-          <img src="/brian-henderson.jpg" alt="Brian Henderson" />
+          <img src="/brian-financial-advisor-headshot-v2.png" alt="Brian Henderson" />
           <div className="photo-index">BH / 01</div>
         </div>
         <div className="difference-copy">
