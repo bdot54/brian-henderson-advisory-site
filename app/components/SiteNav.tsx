@@ -8,7 +8,7 @@ export function SiteNav() {
           <img className="brand-symbol" src="/brian-henderson-mark-navy.png" alt="" />
           <span className="brand-copy">
             <strong>Brian Henderson</strong>
-            <small>PhD, CFA · Financial Planner</small>
+            <small>PhD, CFA · Wealth Manager</small>
           </span>
         </Link>
         <nav aria-label="Main navigation">

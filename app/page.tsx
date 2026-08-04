@@ -141,7 +141,7 @@ export default function Home() {
           </div>
           <div className="hero-identity">
             <strong>Brian Henderson, PhD, CFA</strong>
-            <span>Finance Professor · Financial Advisor · Reston, Virginia</span>
+            <span>Finance Professor · Wealth Manager · Oakton, Virginia</span>
           </div>
         </div>
       </section>

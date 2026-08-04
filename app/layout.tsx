@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: "Brian Henderson, PhD, CFA | 401(k) Financial Advisor",
     template: "%s | Brian Henderson, PhD, CFA",
   },
-  description: "401(k) plan advisory for employers and personal wealth management from Brian Henderson, PhD, CFA, in Reston, Virginia.",
+  description: "401(k) plan advisory for employers and personal wealth management from Brian Henderson, PhD, CFA, in Oakton, Virginia.",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
   openGraph: {
     title: "A clearer view of your 401(k).",

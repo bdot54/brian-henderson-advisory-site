@@ -41,7 +41,7 @@ test("server-renders the advisory homepage", async () => {
   assert.match(html, /Read more \(3 min read\)/);
   assert.match(html, /Personal Wealth Management/);
   assert.match(html, /brian-henderson-mark-navy\.png/);
-  assert.match(html, /PhD, CFA · Financial Planner/);
+  assert.match(html, /PhD, CFA · Wealth Manager/);
   assert.match(html, /A no-risk first step/);
   assert.match(html, /bjhndrsn@gmail\.com/);
   assert.match(html, /linkedin\.com\/in\/brian-henderson-63647950/);
