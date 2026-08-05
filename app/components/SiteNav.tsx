@@ -1,11 +1,19 @@
 import Link from "next/link";
 
-export function SiteNav() {
+type SiteNavProps = {
+  accent?: "blue" | "green";
+};
+
+export function SiteNav({ accent = "blue" }: SiteNavProps) {
   return (
     <header className="site-header">
       <div className="shell nav-inner">
         <Link className="brand" href="/" aria-label="Brian Henderson home">
-          <img className="brand-symbol" src="/brian-henderson-mark-navy.png" alt="" />
+          <img
+            className="brand-symbol"
+            src={accent === "green" ? "/brian-henderson-mark-wealth.png" : "/brian-henderson-mark-navy.png"}
+            alt=""
+          />
           <span className="brand-copy">
             <strong>Brian Henderson</strong>
             <small>PhD, CFA · Wealth Manager</small>

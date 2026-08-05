@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function WealthPage() {
   return (
     <main className="wealth-page">
-      <SiteNav />
+      <SiteNav accent="green" />
       <section className="hero wealth-primary-hero shell" id="top">
         <div className="hero-copy">
           <div className="eyebrow"><span /> Personal wealth management</div>

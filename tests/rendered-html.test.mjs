@@ -113,6 +113,7 @@ test("server-renders the personal wealth page", async () => {
   assert.equal(response.status, 200);
   const html = await response.text();
   assert.match(html, /A clearer path to the <em>future<\/em> you’ve worked for/);
+  assert.match(html, /brian-henderson-mark-wealth\.png/);
   assert.match(html, /brian-financial-advisor-headshot-v3\.png/);
   assert.match(html, /Personal financial planning · Wealth management · Oakton, Virginia/);
   assert.match(html, /One-on-one advisor/);
