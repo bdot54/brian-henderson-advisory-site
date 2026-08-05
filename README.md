@@ -94,6 +94,19 @@ actions tied to the current ChatGPT user. Leave public content anonymous.
 - `npm test`: build the starter and verify its rendered loading skeleton
 - `npm run db:generate`: generate Drizzle migrations after schema changes
 
+## Review Request Email
+
+The `/book` form submits directly to `/api/review-request`, which delivers the
+request through Resend without opening the visitor's email application. The
+production runtime requires:
+
+- `RESEND_API_KEY`: secret API key for the sending account
+- `REVIEW_REQUEST_FROM`: verified sender, such as `Brian Henderson Advisory <reviews@example.com>`
+- `REVIEW_REQUEST_TO`: optional recipient override; defaults to `bjhndrsn@gmail.com`
+
+Set these as Sites production runtime variables rather than committing them to
+the repository.
+
 ## Learn More
 
 - [vinext Documentation](https://github.com/cloudflare/vinext)

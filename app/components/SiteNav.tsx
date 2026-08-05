@@ -12,9 +12,9 @@ export function SiteNav() {
           </span>
         </Link>
         <nav aria-label="Main navigation">
-          <Link href="/#review">401(k) Advisory</Link>
+          <Link href="/retirement-plans#review">401(k) Advisory</Link>
           <Link href="/wealth">Personal Wealth Management</Link>
-          <Link href="/#why-brian">Why Brian</Link>
+          <Link href="/retirement-plans#why-brian">Why Brian</Link>
         </nav>
         <Link className="nav-cta" href="/book">Free 30-minute review <span>↗</span></Link>
       </div>

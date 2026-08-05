@@ -24,7 +24,7 @@ export function Footer({ context = "plan" }: FooterProps) {
           <p>{footerSummary[context]}</p>
         </div>
         <div className="footer-links">
-          <div><small>Explore</small><Link href="/#review">401(k) Advisory</Link><Link href="/wealth">Personal Wealth Management</Link><Link href="/#why-brian">About Brian</Link></div>
+          <div><small>Explore</small><Link href="/retirement-plans#review">401(k) Advisory</Link><Link href="/wealth">Personal Wealth Management</Link><Link href="/retirement-plans#why-brian">About Brian</Link></div>
           <div><small>Connect</small><Link href="/book">Book a review</Link><a href="mailto:bjhndrsn@gmail.com">bjhndrsn@gmail.com</a><a href="https://www.linkedin.com/in/brian-henderson-63647950/" target="_blank" rel="noreferrer">LinkedIn ↗</a><span>Oakton, Virginia</span></div>
         </div>
       </div>
