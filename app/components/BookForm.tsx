@@ -3,26 +3,36 @@
 import { FormEvent, useState } from "react";
 
 export function BookForm() {
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [message, setMessage] = useState("");
 
-  function submit(event: FormEvent<HTMLFormElement>) {
+  async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const body = [
-      "Hi Brian,",
-      "",
-      "I'd like to request a free 30-minute 401(k) fee and fiduciary review.",
-      "",
-      `Name: ${data.get("name")}`,
-      `Organization: ${data.get("organization")}`,
-      `Role: ${data.get("role")}`,
-      `Email: ${data.get("email")}`,
-      `Plan size: ${data.get("size")}`,
-      `Primary concern: ${data.get("concern")}`,
-      `Preferred timing: ${data.get("timing")}`,
-    ].join("\n");
-    setSent(true);
-    window.location.href = `mailto:bjhndrsn@gmail.com?subject=${encodeURIComponent("Free 401(k) fee & fiduciary review")}&body=${encodeURIComponent(body)}`;
+    const form = event.currentTarget;
+    const data = new FormData(form);
+
+    setStatus("sending");
+    setMessage("");
+
+    try {
+      const response = await fetch("/api/review-request", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(Object.fromEntries(data.entries())),
+      });
+      const result = (await response.json().catch(() => null)) as { message?: string } | null;
+
+      if (!response.ok) {
+        throw new Error(result?.message || "We couldn't send your request. Please try again.");
+      }
+
+      form.reset();
+      setStatus("success");
+      setMessage("Your request has been sent to Brian. He'll follow up with you directly.");
+    } catch (error) {
+      setStatus("error");
+      setMessage(error instanceof Error ? error.message : "We couldn't send your request. Please try again.");
+    }
   }
 
   return (
@@ -37,9 +47,12 @@ export function BookForm() {
       <label>Approximate plan size<select name="size" defaultValue=""><option value="">Not sure / prefer not to say</option><option>Under $1 million</option><option>$1–5 million</option><option>$5–20 million</option><option>$20–50 million</option><option>More than $50 million</option></select></label>
       <label>What would you most like to understand?<textarea name="concern" required rows={4} placeholder="Fees, investment options, provider service, fiduciary process, participation, plan design…" /></label>
       <label>Best days or times to meet<input name="timing" placeholder="For example: Tuesday or Thursday afternoons" /></label>
-      <button className="button button-primary form-submit" type="submit">Prepare my review request <span>↗</span></button>
-      <p className="form-privacy">Your information is used only to respond to this request. Submitting opens a prepared email in your own email app.</p>
-      {sent && <p className="form-status" role="status">Your email app should open with the request prepared.</p>}
+      <div className="form-honeypot" aria-hidden="true"><label>Website<input name="website" tabIndex={-1} autoComplete="off" /></label></div>
+      <button className="button button-primary form-submit" type="submit" disabled={status === "sending"}>
+        {status === "sending" ? "Sending your request…" : "Send my review request"} <span>↗</span>
+      </button>
+      <p className="form-privacy">Your information is sent securely to Brian and used only to respond to this request.</p>
+      {message && <p className={`form-status form-status-${status}`} role="status" aria-live="polite">{message}</p>}
     </form>
   );
 }
