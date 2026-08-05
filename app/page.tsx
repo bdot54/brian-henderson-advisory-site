@@ -150,7 +150,7 @@ export default function Home() {
         <div className="shell proof-grid">
           <div><GraduationCap aria-hidden="true" /><span><strong>PhD</strong><small>Finance</small></span></div>
           <div><Award aria-hidden="true" /><span><strong>CFA</strong><small>Charterholder</small></span></div>
-          <div><Landmark aria-hidden="true" /><span><strong>Distinguished Professor of Finance</strong><small>George Washington University</small></span></div>
+          <div><Landmark aria-hidden="true" /><span><strong>Finance Professor</strong><small>George Washington University</small></span></div>
           <div><ChartNoAxesCombined aria-hidden="true" /><span><strong>Market Expert</strong><small>Investment strategy &amp; market analysis</small></span></div>
           <div><Scale aria-hidden="true" /><span><strong>Expert witness</strong><small>Complex financial matters</small></span></div>
         </div>

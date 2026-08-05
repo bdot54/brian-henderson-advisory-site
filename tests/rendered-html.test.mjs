@@ -45,7 +45,7 @@ test("server-renders the advisory homepage", async () => {
   assert.match(html, /A no-risk first step/);
   assert.match(html, /bjhndrsn@gmail\.com/);
   assert.match(html, /linkedin\.com\/in\/brian-henderson-63647950/);
-  assert.match(html, /Distinguished Professor of Finance/);
+  assert.match(html, /Finance Professor/);
   assert.match(html, /Market Expert/);
   assert.match(html, /Investment strategy &amp; market analysis/);
   assert.match(html, /I help plan sponsors uncover hidden costs and overlooked risks/);
