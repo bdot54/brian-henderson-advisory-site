@@ -264,7 +264,17 @@ h1 em, h2 em { color: var(--blue); font-weight: 400; }
 .disclosure div { display: flex; justify-content: space-between; padding-top: 18px; color: #9aa8b5; font-size: 10px; }
 
 /* Wealth page */
-.wealth-primary-hero .portrait-accent { background: #65b77d; }
+.wealth-page {
+  --blue: #65b77d;
+  --blue-dark: #327548;
+  --mint: #d4f0db;
+}
+.wealth-page .plan-teaser {
+  --blue: #4f7cff;
+  --blue-dark: #315ddd;
+  --mint: #b7e7c2;
+}
+.wealth-primary-hero .portrait-accent { background: var(--blue); }
 .wealth-primary-hero .portrait-frame { width: 90%; }
 .wealth-primary-hero .portrait-frame img { object-position: center 18%; }
 .wealth-primary-hero .hero-identity { width: 90%; }

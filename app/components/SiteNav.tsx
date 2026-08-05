@@ -12,7 +12,7 @@ export function SiteNav() {
           </span>
         </Link>
         <nav aria-label="Main navigation">
-          <Link href="/retirement-plans#review">401(k) Advisory</Link>
+          <Link href="/retirement-plans">401(k) Advisory</Link>
           <Link href="/wealth">Personal Wealth Management</Link>
           <Link href="/retirement-plans#why-brian">Why Brian</Link>
         </nav>

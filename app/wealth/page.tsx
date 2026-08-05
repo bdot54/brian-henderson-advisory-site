@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function WealthPage() {
   return (
-    <main>
+    <main className="wealth-page">
       <SiteNav />
       <section className="hero wealth-primary-hero shell" id="top">
         <div className="hero-copy">
@@ -93,7 +93,7 @@ export default function WealthPage() {
       <section className="wealth-teaser plan-teaser shell">
         <div className="wealth-scene"><img src="/brian-financial-advisor-headshot-v2.png" alt="Brian Henderson, PhD, CFA" /></div>
         <div>
-          <div className="eyebrow"><span /> For business owners &amp; plan leaders</div>
+          <div className="eyebrow"><span /> For business owners &amp; retirement plan leaders</div>
           <h2>Your company’s retirement plan deserves the same clear thinking.</h2>
         </div>
         <div className="wealth-copy">
