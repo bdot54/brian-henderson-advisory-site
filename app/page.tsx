@@ -14,10 +14,10 @@ export default function WelcomePage() {
           <img className="brand-symbol" src="/brian-henderson-mark-navy.png" alt="" />
           <span className="brand-copy">
             <strong>Brian Henderson</strong>
-            <small>PhD, CFA · Financial Planner</small>
+            <small>PhD, CFA · Wealth Manager</small>
           </span>
         </Link>
-        <span className="gateway-location">Reston, Virginia</span>
+        <span className="gateway-location">Oakton, Virginia</span>
       </header>
 
       <section className="gateway-shell shell">
@@ -26,7 +26,7 @@ export default function WelcomePage() {
           <img src="/brian-financial-advisor-headshot-v3.png" alt="Brian J. Henderson, PhD, CFA" />
           <div className="gateway-photo-caption">
             <strong>Brian J. Henderson</strong>
-            <span>Finance professor · CFA charterholder · Financial advisor</span>
+            <span>Finance professor · CFA charterholder · Wealth manager</span>
           </div>
         </div>
 

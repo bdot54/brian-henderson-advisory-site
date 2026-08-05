@@ -31,7 +31,7 @@ export default function WealthPage() {
           </div>
           <div className="hero-identity">
             <strong>Brian Henderson, PhD, CFA</strong>
-            <span>Personal financial planning · Wealth management · Reston, Virginia</span>
+            <span>Personal financial planning · Wealth management · Oakton, Virginia</span>
           </div>
         </div>
       </section>
@@ -40,7 +40,7 @@ export default function WealthPage() {
         <div className="shell wealth-proof-grid">
           <div><strong>PhD in Finance</strong><span>Deep financial expertise</span></div>
           <div><strong>CFA charterholder</strong><span>Investment discipline</span></div>
-          <div><strong>Distinguished professor</strong><span>Clear explanations</span></div>
+          <div><strong>Finance professor</strong><span>Clear explanations</span></div>
           <div><strong>One-on-one advisor</strong><span>Direct, involved service</span></div>
         </div>
       </section>
