@@ -26,7 +26,7 @@ test("server-renders the service gateway", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /You found Brian J\. Henderson’s website/);
+  assert.match(html, /Who is driving your portfolio\? Brian is ready to take the wheel\./);
   assert.match(html, /401\(k\)\/403\(b\) plan advisory/);
   assert.match(html, /Personal financial planning &amp; wealth management/);
   assert.match(html, /href="\/choose\/retirement-plans"/);
