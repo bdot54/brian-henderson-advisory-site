@@ -32,7 +32,7 @@ export default function WelcomePage() {
 
         <div className="gateway-content">
           <div className="eyebrow"><span /> Welcome</div>
-          <h1>Who is driving your portfolio? Brian is ready to take the wheel.</h1>
+          <h1>Brian is ready to help you achieve your financial goals.</h1>
           <p className="gateway-question">What kind of financial guidance are you looking for?</p>
 
           <div className="gateway-options" aria-label="Choose the kind of financial guidance you need">
